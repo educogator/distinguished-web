@@ -1,0 +1,120 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1240px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "red",
+          "name": "MCKK Red",
+          "color": "#A51D2D"
+        },
+        {
+          "slug": "gold",
+          "name": "Gold",
+          "color": "#D8AA38"
+        },
+        {
+          "slug": "charcoal",
+          "name": "Charcoal",
+          "color": "#181818"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#F6F6F4"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#666666"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "system",
+          "name": "System",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "medium",
+          "name": "Medium",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "x-large",
+          "name": "X-Large",
+          "size": "2.5rem"
+        },
+        {
+          "slug": "hero",
+          "name": "Hero",
+          "size": "5rem"
+        }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "rem", "%", "vw"]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|white",
+      "text": "var:preset|color|charcoal"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|system",
+      "fontSize": "1.125rem",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|red"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontWeight": "650",
+          "lineHeight": "1.12",
+          "letterSpacing": "-0.035em"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|charcoal",
+          "text": "var:preset|color|white"
+        },
+        "border": {
+          "radius": "8px"
+        }
+      }
+    }
+  }
+}
