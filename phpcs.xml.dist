@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="MCKK ADS Showcase">
+  <description>Full WordPress Coding Standards for production theme PHP.</description>
+  <file>mckk-ads-showcase</file>
+  <arg name="extensions" value="php"/>
+  <rule ref="WordPress"/>
+</ruleset>

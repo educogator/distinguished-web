@@ -1,0 +1,28 @@
+{
+  "tool": "Lighthouse",
+  "version": "13.0.1",
+  "profile": "desktop, localhost synthetic fixture",
+  "categories": {
+    "performance": 1,
+    "accessibility": 1,
+    "best-practices": 1
+  },
+  "metrics": {
+    "largest-contentful-paint": {
+      "value": 504.139,
+      "display": "0.5\u00a0s"
+    },
+    "cumulative-layout-shift": {
+      "value": 0,
+      "display": "0"
+    },
+    "total-blocking-time": {
+      "value": 0,
+      "display": "0\u00a0ms"
+    },
+    "first-contentful-paint": {
+      "value": 424.139,
+      "display": "0.4\u00a0s"
+    }
+  }
+}

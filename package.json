@@ -1,0 +1,15 @@
+{
+  "name": "mckk-ads-showcase-dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Development-only browser validation; no Node required on production",
+  "scripts": {
+    "test": "node tests/browser.mjs",
+    "check:js": "node --check mckk-ads-showcase/assets/js/main.js",
+    "package": "python3 scripts/package-theme.py"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1"
+  }
+}
