@@ -36,6 +36,8 @@ while ( have_posts() ) :
 	?>
 											</div>
 	<?php
+	if ( ! post_password_required() ) {
+		get_template_part( 'template-parts/related-content' ); }
 	if ( comments_open() || get_comments_number() ) {
 		comments_template(); }
 endwhile;

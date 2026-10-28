@@ -11,7 +11,7 @@ if ( 'page' === get_option( 'show_on_front' ) ) :
 	while ( have_posts() ) :
 		the_post();
 		?>
-		<section class="homepage-story wrap" aria-labelledby="homepage-story-title"><div class="section-heading"><span class="eyebrow"><?php esc_html_e( 'Our story', 'mckk-ads-showcase' ); ?></span><h2 id="homepage-story-title"><?php the_title(); ?></h2></div><div class="entry-content">
+		<section class="homepage-story wrap" aria-labelledby="homepage-story-title"><div class="section-heading"><span class="eyebrow"><?php esc_html_e( 'Our story', 'mckk-ads-showcase' ); ?></span><h2 id="homepage-story-title"><?php echo esc_html( get_the_title() ? get_the_title() : __( 'Our story', 'mckk-ads-showcase' ) ); ?></h2></div><div class="entry-content">
 		<?php
 		the_content();
 		wp_link_pages();

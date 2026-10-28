@@ -3,14 +3,16 @@
 from pathlib import Path
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 import hashlib
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 THEME = ROOT / 'mckk-ads-showcase'
-OUT = ROOT / 'dist' / 'mckk-ads-showcase-v1.0.0.zip'
+VERSION = re.search(r'^Version:\s*(\d+\.\d+\.\d+)', (THEME / 'style.css').read_text(), re.M).group(1)
+OUT = ROOT / 'dist' / f'mckk-ads-showcase-v{VERSION}.zip'
 REQUIRED = ['style.css', 'index.php', 'functions.php', 'theme.json', 'screenshot.png', 'README.md', 'LICENSE']
 for name in REQUIRED:
     assert (THEME / name).is_file(), f'Missing required release file: {name}'
-assert 'Version: 1.0.0' in (THEME / 'style.css').read_text()
+assert VERSION in (THEME / 'functions.php').read_text()
 OUT.parent.mkdir(exist_ok=True)
 with ZipFile(OUT, 'w', compression=ZIP_DEFLATED, compresslevel=9) as archive:
     for path in sorted(THEME.rglob('*')):

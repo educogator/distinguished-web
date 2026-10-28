@@ -1,4 +1,4 @@
-# Installation guide · version 1.0.0
+# Installation guide · version 1.1.0
 
 ## Before installing
 
@@ -10,7 +10,7 @@ The theme does not contain content, database data, credentials or an uploads arc
 
 ## WordPress dashboard
 
-1. Download `dist/mckk-ads-showcase-v1.0.0.zip`. Optionally verify its adjacent SHA-256.
+1. Download `dist/mckk-ads-showcase-v1.1.0.zip`. Optionally verify its adjacent SHA-256.
 2. On staging, open **Appearance > Themes > Add New > Upload Theme**.
 3. Select the ZIP, click **Install Now**, then **Activate** on staging.
 4. Open **Appearance > Menus > Manage Locations** and assign the existing menu to
@@ -21,7 +21,7 @@ The theme does not contain content, database data, credentials or an uploads arc
    site title and tagline. Keep the original logo proportions and artwork.
 6. In **Showcase presentation**, optionally select an approved existing hero image.
    A static homepage featured image is the default fallback. Leave both unset for a
-   typographic hero. Add existing page IDs to curate student-work destination cards.
+   typographic hero. Add existing page or post IDs to curate student-work destination cards.
 7. Keep the existing homepage/posts-page selection in **Settings > Reading** and every
    existing slug/permalink. Do not create replacement pages or change permalink settings.
 8. Review the complete homepage content, representative resource/media pages, search,

@@ -114,6 +114,22 @@
     closeDrawer();
   }
 
+  // A valid media record can still fail over the network. Retain an explicit concept fallback.
+  document.querySelectorAll("[data-hero-media]").forEach((figure) => {
+    const image = figure.querySelector(":scope > img");
+    if (!image) return;
+    const fallback = () => {
+      image.hidden = true;
+      figure.classList.add("hero-media--concept");
+      const concept = figure.querySelector(".hero-concept-fallback");
+      if (concept) concept.hidden = false;
+      const caption = figure.querySelector(".hero-original-caption");
+      if (caption) caption.hidden = true;
+    };
+    image.addEventListener("error", fallback, { once: true });
+    if (image.complete && !image.naturalWidth) fallback();
+  });
+
   const contentAreas = document.querySelectorAll(".entry-content");
   // Existing external embeds keep their original URLs. Add an adjacent fallback only
   // when the source is safe and the editor hasn't already supplied that exact link.

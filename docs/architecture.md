@@ -53,3 +53,7 @@ Use the native Customizer, menus, Site Identity, featured images and editor firs
 future curation requires taxonomy filters, validate actual metadata and make that a
 separate opt-in feature. Official brand verification, production-specific plugin adapters
 and a real content inventory require staging access, not guessed replacement templates.
+
+## v1.1 additions
+
+See [the post-install audit](post-install-audit-v1.md) and [update guide](update-v1.1.md). `inc/media.php` reads existing library previews without changing content or metadata. The editorial hero, compatible-media fallback, original CSS concept graphic, menu-based relationships and empty-page navigation aid are presentation-only additions. Native Customizer controls preserve v1 keys and add optional composition/content-preview controls.

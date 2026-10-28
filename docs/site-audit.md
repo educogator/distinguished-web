@@ -1,3 +1,5 @@
+> Historical initial audit. The public site is now accessible; see [the post-install v1 audit](post-install-audit-v1.md) and [verified inventory](public-url-inventory-v1.1.md).
+
 # Public site audit
 
 Audit date: 28 October 2026 (Asia/Kuala_Lumpur). Target: https://distinguished.mckk.edu.my/.

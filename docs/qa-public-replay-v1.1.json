@@ -1,0 +1,49 @@
+{
+  "provenance": "Public content.rendered replay, not a database clone or production deployment",
+  "results": [
+    {
+      "width": 360,
+      "status": "passed",
+      "libraryPreviews": 16,
+      "axeViolations": 0
+    },
+    {
+      "width": 390,
+      "status": "passed",
+      "libraryPreviews": 16,
+      "axeViolations": 0
+    },
+    {
+      "width": 768,
+      "status": "passed",
+      "libraryPreviews": 16,
+      "axeViolations": 0
+    },
+    {
+      "width": 1024,
+      "status": "passed",
+      "libraryPreviews": 16,
+      "axeViolations": 0
+    },
+    {
+      "width": 1440,
+      "status": "passed",
+      "libraryPreviews": 16,
+      "axeViolations": 0
+    }
+  ],
+  "additional_scenarios": [
+    {
+      "name": "Environment menu relationships with parent=0",
+      "status": "passed"
+    },
+    {
+      "name": "Empty existing page navigation aid",
+      "status": "passed"
+    },
+    {
+      "name": "Existing visual-notes post with original images and related links",
+      "status": "passed"
+    }
+  ]
+}

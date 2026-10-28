@@ -15,7 +15,7 @@ const check = async (name, action) => {
 const context = await browser.newContext({ reducedMotion: 'reduce' });
 const page = await context.newPage();
 page.on('pageerror', (error) => errors.push(error.message));
-await mkdir('docs/previews', { recursive: true });
+await mkdir('docs/previews-v1.1', { recursive: true });
 const widths = [360, 390, 768, 1024, 1440];
 for (const width of widths) {
   await page.setViewportSize({ width, height: 1000 });
@@ -29,7 +29,7 @@ for (const width of widths) {
       const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice']).analyze();
       assert.equal(axe.violations.length, 0, JSON.stringify(axe.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.map((n) => n.target) }))));
     });
-    if ([390, 768, 1440].includes(width)) await page.screenshot({ path: `docs/previews/${name}-${width}.png`, fullPage: true });
+    if ([390, 768, 1440].includes(width)) await page.screenshot({ path: `docs/previews-v1.1/fixture-${name}-${width}.png`, fullPage: true });
   }
 }
 await page.setViewportSize({ width: 390, height: 844 });

@@ -1,0 +1,24 @@
+{
+  "tool": "Lighthouse",
+  "version": "13.0.1",
+  "profile": "desktop local synthetic fixture, not production",
+  "categories": {
+    "performance": 0.99,
+    "accessibility": 1,
+    "best-practices": 1
+  },
+  "metrics": {
+    "largest-contentful-paint": {
+      "value": 800.4300000000001,
+      "display": "0.8\u00a0s"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.0009366441601357138,
+      "display": "0.001"
+    },
+    "total-blocking-time": {
+      "value": 0,
+      "display": "0\u00a0ms"
+    }
+  }
+}

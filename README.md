@@ -1,13 +1,13 @@
-# MCKK ADS Showcase · 1.0.0
+# MCKK ADS Showcase · 1.1.0
 
 An independent hybrid classic WordPress theme for a digital learning showcase. Existing
 WordPress content stays in the database and remains editable. There is no content import,
 page recreation, React application, required paid plugin, external font, or production build.
 
-**Release:** `dist/mckk-ads-showcase-v1.0.0.zip` (checksum alongside it).
+**Release:** `dist/mckk-ads-showcase-v1.1.0.zip` (checksum alongside it).
 **Source:** `mckk-ads-showcase/`. **Minimum:** WordPress 6.6, PHP 8.0. Recommended: a
 currently supported WordPress/PHP release, verified with your plugins on staging first.
-Actual test versions and limits are recorded in [QA](docs/qa-report.md).
+Actual test versions and limits are recorded in [QA](docs/qa-v1.1.md).
 
 ## Install and edit
 
@@ -15,7 +15,7 @@ On an authorized staging site, upload the ZIP through Appearance > Themes > Add 
 Upload Theme, install, then activate. Assign the existing menu to Primary navigation,
 choose the existing logo under Site Identity, and retain Settings > Reading and Permalinks.
 Use Appearance > Customize > Showcase presentation for the optional hero image, curated
-existing page IDs, lightbox, decorative accent and footer text. Pages and posts remain
+existing page or post IDs, lightbox, decorative accent and footer text. Pages and posts remain
 editable with their existing editor. See [installation](docs/installation-guide.md) and
 [deployment and rollback](docs/deployment-and-rollback.md) before production use.
 
@@ -40,8 +40,7 @@ JSON evidence to ignored `test-results/`; reviewed results live in the QA report
 
 ## Compatibility and scope
 
-Public website discovery was blocked by the environment's egress policy. All known
-paths in the inventory are labelled as brief-supplied, unverified references. The theme
+The first audit was blocked; the public site is now accessible and was re-audited for v1.1 (see docs/post-install-audit-v1.md). The updated inventory verifies 22 public pages and 9 posts. Full private database/plugin configuration remains unavailable. The theme
 does not invent missing pages, media, projects or school claims; missing optional pages
 produce no cards. The original homepage content is rendered completely once. Its
 editorial layout is not automatically rearranged. This intentionally favors preservation.
@@ -56,3 +55,5 @@ existing records. Do not create automatic migrations, change classifications, or
 taxonomy filters without actual metadata. No deployment or remote push is performed here.
 
 Code is GPL-2.0-or-later. The ZIP contains no school photographs or unofficial crest.
+
+For the installed v1 upgrade, read [the v1.1 update guide](docs/update-v1.1.md) and [post-install audit](docs/post-install-audit-v1.md). Previous v1.0 ZIP/checksum remain in dist for rollback.

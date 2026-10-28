@@ -1,13 +1,13 @@
 # MCKK ADS Showcase
 
-Version 1.0.0 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
+Version 1.1.0 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
 
 Independent hybrid classic theme. Requires WordPress 6.6+ and PHP 8.0+. No parent theme,
 mandatory plugin, Node.js, external font or build step is needed on the hosting account.
 
 ## Installation
 
-Back up and test on staging first. Upload `mckk-ads-showcase-v1.0.0.zip` using Appearance >
+Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.0.zip` using Appearance >
 Themes > Add New > Upload Theme. Install and activate on staging. Keep the existing
 Reading/Permalink settings. Assign existing menus to Primary and optionally Footer.
 Choose the original, unmodified school logo in Appearance > Customize > Site Identity.
@@ -20,7 +20,7 @@ Choose the original, unmodified school logo in Appearance > Customize > Site Ide
 - Existing page titles, permalinks and featured images power discovery cards. Missing
   references are omitted. Dates shown for journal entries are their stored publication dates.
 - Appearance > Customize > Showcase presentation lets administrators select a hero image
-  from the media library, enter up to 12 existing page IDs for curated links, edit footer
+  from the media library, enter up to 12 existing page or post IDs for curated links, edit footer
   text, adjust a decorative accent and disable the compatible image lightbox.
 - Page IDs can be read from the `post=123` part of the ordinary Edit Page URL. Curated
   entries must be existing published, non-password-protected pages. No content is created.
@@ -53,7 +53,7 @@ Automated checks do not replace human screen-reader and cross-browser testing.
 
 ## Limitations and safe release
 
-The production site was not accessible from the build environment. No complete production
+The public site was re-audited after v1 installation. Public REST responses revealed mixed page/post resources, absent featured images, a blank homepage title and an incompatible TIFF hero; these presentation faults are corrected in v1.1. No complete production
 inventory, plugin list, database or hosting version was available. Test the real site on
 an authorized staging copy, especially shortcode plugins, gallery CSS, SEO, submissions,
 Google Drive, YouTube, downloads, attachments and historical homepage layout. Native
@@ -63,3 +63,18 @@ No source media is bundled. Theme screenshot shows explicitly labelled local fix
 The repository's `docs/` folder contains full audit, validation, installation and rollback
 instructions. Reactivate the previous theme to roll back the presentation; do not overwrite
 the content database merely to switch themes. Production installation is always manual.
+
+## Changes in 1.1.0
+
+Editorial panorama hero, optional compact split composition, sticky restrained navigation,
+large showcase panels and an original CSS concept illustration for missing/incompatible
+hero images. Concept graphics are decorative, not student work. No Apple assets are bundled.
+
+Existing JPEG/PNG/WebP/AVIF/GIF attachments (or compatible derivatives) supply previews.
+TIFF originals are not rendered in the hero. Use a web-compatible library image for real
+photography. Cards can read the first compatible existing library image in content when
+featured media is absent; disable this in Showcase presentation if desired. Source content,
+featured-image metadata and attachment files are never changed. No network fetch occurs
+at page render. Existing post resources now appear alongside pages; menu relationships
+supply related content even when every database parent is zero. Truly empty existing pages
+show a neutral search/navigation aid. Same theme folder and existing setting keys are retained.

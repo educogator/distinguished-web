@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MCKK ADS Showcase 1.0.0\n"
+"Project-Id-Version: MCKK ADS Showcase 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mckk-ads-showcase\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-27T16:59:21+00:00\n"
+"POT-Creation-Date: 2026-10-28T15:35:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mckk-ads-showcase\n"
@@ -60,23 +60,23 @@ msgid "Our story"
 msgstr ""
 
 #: front-page.php:19
-#: page.php:36
+#: page.php:39
 msgid "Edit page"
 msgstr ""
 
-#: front-page.php:23
+#: front-page.php:26
 msgid "Explore learning"
 msgstr ""
 
-#: front-page.php:24
+#: front-page.php:27
 msgid "Student digital showcase"
 msgstr ""
 
-#: front-page.php:25
+#: front-page.php:28
 msgid "Teaching & environment"
 msgstr ""
 
-#: front-page.php:40
+#: front-page.php:43
 #: template-parts/post-list.php:14
 msgid "From the journal"
 msgstr ""
@@ -101,43 +101,63 @@ msgstr ""
 msgid "Open embedded resource"
 msgstr ""
 
-#: inc/customizer.php:34
+#: inc/assets.php:36
+msgid "Open original image"
+msgstr ""
+
+#: inc/customizer.php:44
 msgid "Showcase presentation"
 msgstr ""
 
-#: inc/customizer.php:70
+#: inc/customizer.php:88
 msgid "Homepage hero image"
 msgstr ""
 
-#: inc/customizer.php:71
-msgid "Choose approved photography from the existing media library. Falls back to the homepage featured image; no image is required."
-msgstr ""
-
-#: inc/customizer.php:80
-msgid "Student work: existing page IDs"
-msgstr ""
-
-#: inc/customizer.php:81
-msgid "Up to 12 comma-separated page IDs, in order. Only published, unprotected pages appear. Leave blank for existing Showcase, Repository and Visual Note-taking pages. No new content is created."
-msgstr ""
-
 #: inc/customizer.php:89
-msgid "Footer text"
+msgid "Choose approved photography from the existing media library. Falls back to the homepage featured image; use JPEG, PNG, WebP or AVIF. An original concept illustration appears when no web-compatible image is available."
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Student work: existing page or post IDs"
 msgstr ""
 
 #: inc/customizer.php:99
+msgid "Up to 12 comma-separated page or post IDs, in order. Only published, unprotected content appears. Leave blank for existing Showcase, Repository and Visual Note-taking pages. No new content is created."
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Footer text"
+msgstr ""
+
+#: inc/customizer.php:117
 msgid "Decorative accent"
 msgstr ""
 
-#: inc/customizer.php:100
+#: inc/customizer.php:118
 msgid "Affects decorative rules only. Text, links and focus indicators keep accessible contrast."
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:126
+msgid "Hero composition"
+msgstr ""
+
+#: inc/customizer.php:129
+msgid "Editorial panorama"
+msgstr ""
+
+#: inc/customizer.php:130
+msgid "Compact split"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Use an existing content image when a card has no featured image"
+msgstr ""
+
+#: inc/customizer.php:136
 msgid "Enhance compatible image links with an accessible lightbox"
 msgstr ""
 
-#: inc/customizer.php:106
+#: inc/customizer.php:137
 msgid "Use the existing Twenty Twenty primary menu when no menu is assigned"
 msgstr ""
 
@@ -146,15 +166,15 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: inc/template-functions.php:112
+#: inc/template-functions.php:128
 msgid "Discover MCKK"
 msgstr ""
 
-#: inc/template-functions.php:134
+#: inc/template-functions.php:150
 msgid "Previous"
 msgstr ""
 
-#: inc/template-functions.php:135
+#: inc/template-functions.php:151
 msgid "Next"
 msgstr ""
 
@@ -224,43 +244,59 @@ msgstr ""
 msgid "Journal"
 msgstr ""
 
-#: template-parts/content-card.php:33
+#: template-parts/content-card.php:36
 msgid "Explore"
 msgstr ""
 
-#: template-parts/content-card.php:33
+#: template-parts/content-card.php:36
 msgid "Untitled"
 msgstr ""
 
-#: template-parts/hero.php:16
+#: template-parts/content-empty.php:10
+msgid "Keep exploring."
+msgstr ""
+
+#: template-parts/content-empty.php:11
+msgid "Choose a related page below or search the site."
+msgstr ""
+
+#: template-parts/hero.php:18
 msgid "Inspire."
 msgstr ""
 
-#: template-parts/hero.php:16
+#: template-parts/hero.php:18
 msgid "Imagine."
 msgstr ""
 
-#: template-parts/hero.php:16
+#: template-parts/hero.php:18
 msgid "Impact."
 msgstr ""
 
-#: template-parts/hero.php:52
+#: template-parts/hero.php:46
+msgid "Concept illustration · Not student work"
+msgstr ""
+
+#: template-parts/hero.php:51
 msgid "Inspire"
 msgstr ""
 
-#: template-parts/hero.php:52
+#: template-parts/hero.php:51
 msgid "Imagine"
 msgstr ""
 
-#: template-parts/hero.php:52
+#: template-parts/hero.php:51
 msgid "Impact"
+msgstr ""
+
+#: template-parts/media-concept.php:11
+msgid "Ideas in motion"
 msgstr ""
 
 #: template-parts/post-list.php:40
 msgid "There is no published content to show here yet."
 msgstr ""
 
-#: template-parts/related-content.php:39
+#: template-parts/related-content.php:42
 msgid "Continue exploring"
 msgstr ""
 
@@ -330,8 +366,4 @@ msgstr ""
 
 #: theme.json
 msgid "Hero"
-msgstr ""
-
-#: inc/assets.php
-msgid "Open original image"
 msgstr ""

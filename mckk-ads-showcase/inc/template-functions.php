@@ -17,6 +17,21 @@ function mckk_ads_public_page( $path ) {
 }
 
 /**
+ * Resolve a public page or post without changing its original URL.
+ *
+ * @param string $path Existing content path.
+ * @return WP_Post|null
+ */
+function mckk_ads_public_content( $path ) {
+	$page = mckk_ads_public_page( $path );
+	if ( $page ) {
+		return $page;
+	}
+	$post = get_page_by_path( trim( $path, '/' ), OBJECT, 'post' );
+	return $post && is_post_publicly_viewable( $post ) && ! $post->post_password ? $post : null;
+}
+
+/**
  * Resolve known page paths without fabricating missing content.
  *
  * @param string[] $paths Existing page paths.
@@ -25,7 +40,7 @@ function mckk_ads_public_page( $path ) {
 function mckk_ads_pages( $paths ) {
 	$pages = array();
 	foreach ( $paths as $path ) {
-		$page = mckk_ads_public_page( $path );
+		$page = mckk_ads_public_content( $path );
 		if ( $page ) {
 			$pages[ $page->ID ] = $page;
 		}
@@ -52,12 +67,13 @@ function mckk_ads_curated_pages() {
 	if ( $ids ) {
 		return get_posts(
 			array(
-				'post_type'      => 'page',
-				'post_status'    => 'publish',
-				'has_password'   => false,
-				'post__in'       => array_map( 'absint', explode( ',', $ids ) ),
-				'orderby'        => 'post__in',
-				'posts_per_page' => 12,
+				'post_type'        => array( 'page', 'post' ),
+				'suppress_filters' => false,
+				'post_status'      => 'publish',
+				'has_password'     => false,
+				'post__in'         => array_map( 'absint', explode( ',', $ids ) ),
+				'orderby'          => 'post__in',
+				'posts_per_page'   => 12,
 			)
 		);
 	}

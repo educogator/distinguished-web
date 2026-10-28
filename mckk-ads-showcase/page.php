@@ -32,6 +32,9 @@ while ( have_posts() ) :
 	<?php
 	the_content();
 	wp_link_pages();
+	if ( '' === trim( get_post_field( 'post_content', get_the_ID() ) ) && ! post_password_required() ) {
+		get_template_part( 'template-parts/content-empty' );
+	}
 	?>
 	</div><div class="wrap"><?php edit_post_link( __( 'Edit page', 'mckk-ads-showcase' ), '<p class="edit-link">', '</p>' ); ?></div></article>
 	<?php

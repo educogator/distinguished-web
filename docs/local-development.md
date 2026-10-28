@@ -89,3 +89,7 @@ Saving is not runtime application or publication. The public crawl remains block
 the policy is applied; subsequent tasks should retry read-only discovery after that change.
 The local tests do not require production credentials. They use the platform Git proxy,
 GitHub source downloads and npm/Debian registry access. No secret requirement was added.
+
+## Post-install v1.1 review
+
+See post-install-audit-v1.md, qa-v1.1.md and update-v1.1.md. The separate public rendered-content replay runs from `/workspace/mckk-tools/review-wordpress` on port 8081. Its media are remote references, not files in the theme. The retained `/workspace/mckk-tools/verified-fetch.py` service on port 8090 validates upstream HTTPS with the system trust store and caches only public GET assets for browser replay. Run `node tests/public-replay.mjs` only after both retained local services start; it performs no production writes. The original synthetic fixture on 8080 remains independent. Run `wp eval-file tests/release-v11.php` with the local wrapper for the additional regressions.

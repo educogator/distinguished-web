@@ -1,3 +1,5 @@
+> Historical v1.0 validation. See [v1.1 validation](qa-v1.1.md) for the post-install fixes and latest release.
+
 # Validation report · MCKK ADS Showcase 1.0.0
 
 Tested 28 October 2026 (Asia/Kuala_Lumpur). This report describes real execution on an

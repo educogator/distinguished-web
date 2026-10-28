@@ -49,11 +49,11 @@ $assert( ! isset( $fallback_args['menu'] ), 'Prior-theme menu reuse can be disab
 ob_start();
 mckk_ads_fallback_menu();
 $fallback = ob_get_clean();
-$assert( str_contains( $fallback, get_permalink( get_page_by_path( 'environment' ) ) ) && str_contains( $fallback, get_permalink( get_page_by_path( 'qa-environment-child' ) ) ), 'Native fallback preserves actual page hierarchy and URLs' );
+$assert( str_contains( $fallback, get_permalink( get_page_by_path( 'environment' ) ) ) && str_contains( $fallback, get_permalink( get_page_by_path( 'environment/qa-environment-child' ) ) ), 'Native fallback preserves actual page hierarchy and URLs' );
 set_theme_mod( 'nav_menu_locations', $locations );
 remove_theme_mod( 'mckk_ads_reuse_menu' );
 $theme = wp_get_theme();
-$assert( ! $theme->errors() && '1.0.0' === $theme->get( 'Version' ) && '' === $theme->get( 'Template' ), 'WordPress recognizes standalone version 1.0.0 with no parent' );
+$assert( ! $theme->errors() && MCKK_ADS_VERSION === $theme->get( 'Version' ) && '' === $theme->get( 'Template' ), 'WordPress recognizes standalone release with no parent' );
 $assert( has_shortcode( get_page_by_path( 'visual-note-taking-using-ipad' )->post_content, 'mckk_qa_shortcode' ), 'Original shortcode markup remains in the editor database' );
 $assert( $initial['posts'] === $snapshot()['posts'] && $initial['meta'] === $snapshot()['meta'], 'Fixture checks leave original posts and metadata unchanged' );
 WP_CLI::success( $passed . ' integration checks passed.' );

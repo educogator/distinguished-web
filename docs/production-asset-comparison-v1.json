@@ -1,0 +1,12 @@
+[
+  {
+    "file": "assets/css/main.css",
+    "matches_released_v1": true,
+    "live_sha256": "01158c61a9a0550010ad731ac77dcc26e822e730de8720a0d09dc75a468648c4"
+  },
+  {
+    "file": "assets/js/main.js",
+    "matches_released_v1": true,
+    "live_sha256": "f22cdaaf78d612c2d8d6457731036abb77e9e825fb2b1777b0af29802f46cf14"
+  }
+]

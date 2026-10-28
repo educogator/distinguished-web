@@ -48,3 +48,7 @@ Red on white is approximately 7.4:1; charcoal on white approximately 17.8:1; mut
 white approximately 5.7:1. Automated axe evidence covers the tested fixtures, not the
 unknown production content. Existing unlabelled images, low-contrast authored blocks,
 third-party players and legacy heading order need human staging review. See QA report.
+
+## v1.1 additions
+
+See [the post-install audit](post-install-audit-v1.md) and [update guide](update-v1.1.md). `inc/media.php` reads existing library previews without changing content or metadata. The editorial hero, compatible-media fallback, original CSS concept graphic, menu-based relationships and empty-page navigation aid are presentation-only additions. Native Customizer controls preserve v1 keys and add optional composition/content-preview controls.

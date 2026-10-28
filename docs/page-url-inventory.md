@@ -1,3 +1,5 @@
+> Historical brief-supplied inventory. See [the verified public v1.1 inventory](public-url-inventory-v1.1.md) for the current public records and HTTP checks.
+
 # Page and URL inventory
 
 Base: `https://distinguished.mckk.edu.my`. These are **brief-supplied references**, not
