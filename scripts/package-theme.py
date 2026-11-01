@@ -19,7 +19,7 @@ with ZipFile(OUT, 'w', compression=ZIP_DEFLATED, compresslevel=9) as archive:
         if not path.is_file():
             continue
         assert not path.is_symlink(), f'Unexpected symlink: {path}'
-        assert path.suffix.lower() in {'.php', '.css', '.js', '.json', '.png', '.md', '.pot', '.txt'} or path.name == 'LICENSE', path
+        assert path.suffix.lower() in {'.php', '.css', '.js', '.json', '.png', '.md', '.pot', '.txt', '.ttf'} or path.name == 'LICENSE', path
         info = ZipInfo(str(path.relative_to(ROOT)), date_time=(2026, 10, 28, 0, 0, 0))
         info.compress_type = ZIP_DEFLATED
         info.external_attr = 0o100644 << 16

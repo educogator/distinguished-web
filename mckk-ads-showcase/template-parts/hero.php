@@ -51,7 +51,7 @@ $mckk_ads_links = array(
 			);
 			?>
 		<?php endif; ?>
-		<div class="hero-concept-fallback" <?php echo $mckk_ads_size ? 'hidden' : ''; ?>><?php get_template_part( 'template-parts/media-concept' ); ?><p class="concept-caption"><span class="screen-reader-text"><?php esc_html_e( 'Ideas in motion. Create What Matters.', 'mckk-ads-showcase' ); ?> </span><?php esc_html_e( 'Concept illustration · Not student work', 'mckk-ads-showcase' ); ?></p></div>
+		<div class="hero-concept-fallback" <?php echo $mckk_ads_size ? 'hidden' : ''; ?>><?php get_template_part( 'template-parts/media-concept' ); ?><p class="concept-caption"><span class="screen-reader-text"><?php esc_html_e( 'Ideas in motion. Ideas start here.', 'mckk-ads-showcase' ); ?> </span><?php esc_html_e( 'Concept illustration · Not student work', 'mckk-ads-showcase' ); ?></p></div>
 		<?php if ( $mckk_ads_size && wp_get_attachment_caption( $mckk_ads_hero_id ) ) : ?>
 		<figcaption class="hero-original-caption"><?php echo esc_html( wp_get_attachment_caption( $mckk_ads_hero_id ) ); ?></figcaption>
 		<?php endif; ?>

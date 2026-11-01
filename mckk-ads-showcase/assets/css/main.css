@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* MCKK ADS: native content, generous type, deliberate contrast. */
 :root {
   --mckk-red: #a51d2d;
@@ -1537,16 +1545,17 @@ td {
   place-items: center;
   width: 90%;
   height: 36%;
-  border: clamp(3px, 0.6cqw, 7px) solid var(--mckk-red);
+  border: clamp(3px, 0.6cqw, 7px) solid #245b83;
   border-radius: 58% 42% 60% 40%;
   transform: rotate(-15deg);
   margin: 12% 0;
 }
 .concept-message {
-  max-width: 14ch;
+  max-width: 11ch;
   padding: 4px;
-  color: var(--mckk-red);
-  font-size: clamp(0.6rem, 2cqw, 1.35rem);
+  color: #245b83;
+  font-family: "Caveat", cursive;
+  font-size: clamp(0.8rem, 2.6cqw, 1.8rem);
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
