@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MCKK ADS Showcase 1.1.0\n"
+"Project-Id-Version: MCKK ADS Showcase 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mckk-ads-showcase\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-28T15:35:08+00:00\n"
+"POT-Creation-Date: 2026-11-01T06:03:17+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mckk-ads-showcase\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #. Description of the theme
 #: style.css
-msgid "An independent, content-preserving digital showcase with native WordPress editing, accessible navigation and uncropped student media."
+msgid "An independent, content-preserving digital showcase with native WordPress editing, accessible navigation and faithful article media."
 msgstr ""
 
 #. Author of the theme
@@ -272,24 +272,36 @@ msgstr ""
 msgid "Impact."
 msgstr ""
 
-#: template-parts/hero.php:46
+#: template-parts/hero.php:29
+msgid "Vision"
+msgstr ""
+
+#: template-parts/hero.php:56
+msgid "Ideas in motion. Create with iPad."
+msgstr ""
+
+#: template-parts/hero.php:56
 msgid "Concept illustration · Not student work"
 msgstr ""
 
-#: template-parts/hero.php:51
+#: template-parts/hero.php:61
 msgid "Inspire"
 msgstr ""
 
-#: template-parts/hero.php:51
+#: template-parts/hero.php:61
 msgid "Imagine"
 msgstr ""
 
-#: template-parts/hero.php:51
+#: template-parts/hero.php:61
 msgid "Impact"
 msgstr ""
 
 #: template-parts/media-concept.php:11
 msgid "Ideas in motion"
+msgstr ""
+
+#: template-parts/media-concept.php:11
+msgid "Create with iPad"
 msgstr ""
 
 #: template-parts/post-list.php:40

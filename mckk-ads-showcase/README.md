@@ -1,13 +1,13 @@
 # MCKK ADS Showcase
 
-Version 1.1.0 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
+Version 1.1.1 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
 
 Independent hybrid classic theme. Requires WordPress 6.6+ and PHP 8.0+. No parent theme,
 mandatory plugin, Node.js, external font or build step is needed on the hosting account.
 
 ## Installation
 
-Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.0.zip` using Appearance >
+Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.1.zip` using Appearance >
 Themes > Add New > Upload Theme. Install and activate on staging. Keep the existing
 Reading/Permalink settings. Assign existing menus to Primary and optionally Footer.
 Choose the original, unmodified school logo in Appearance > Customize > Site Identity.
@@ -40,7 +40,8 @@ The translation template is `languages/mckk-ads-showcase.pot`.
 
 ## Media and accessibility
 
-Student work, logos and document previews retain their proportions. Existing image
+Home card previews fill their frames with a centered crop. Full article images, logos and
+document previews retain their proportions. Existing image
 anchors are preserved; a separate enlargement button is added to compatible same-origin
 image links. Downloads, external targets and marked plugin galleries are excluded. Add
 `data-no-lightbox` on a wrapper, or disable the feature globally when a plugin owns it.
@@ -78,3 +79,11 @@ featured-image metadata and attachment files are never changed. No network fetch
 at page render. Existing post resources now appear alongside pages; menu relationships
 supply related content even when every database parent is zero. Truly empty existing pages
 show a neutral search/navigation aid. Same theme folder and existing setting keys are retained.
+
+## Changes in 1.1.1
+
+Home hero navigation follows Vision, Teaching, Learning, Showcase. Vision resolves an
+existing public page/post at that slug, otherwise links to the existing Our story section
+on a static homepage. No new page or URL is created. Home card images fill their frames
+with a centered CSS crop, including the large showcase card. The original concept
+ellipse now reads “Create with iPad”; its accessible equivalent appears in the hero caption.

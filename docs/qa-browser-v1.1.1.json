@@ -1,0 +1,158 @@
+{
+  "browser": "System Chromium",
+  "base": "http://127.0.0.1:8080",
+  "results": [
+    {
+      "name": "home at 360px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "home at 360px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "page at 360px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "page at 360px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "home at 390px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "home at 390px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "page at 390px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "page at 390px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "home at 768px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "home at 768px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "page at 768px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "page at 768px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "home at 1024px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "home at 1024px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "page at 1024px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "page at 1024px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "home at 1440px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "home at 1440px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "page at 1440px has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "page at 1440px passes automated WCAG 2.2 AA scan",
+      "status": "passed"
+    },
+    {
+      "name": "Static homepage content is rendered exactly once",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile drawer opens, contains focus and restores focus on Escape",
+      "status": "passed"
+    },
+    {
+      "name": "Nested mobile menus expose correct expanded state",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop submenu supports keyboard activation and Escape",
+      "status": "passed"
+    },
+    {
+      "name": "Classic gallery, shortcode and resource URLs survive rendering",
+      "status": "passed"
+    },
+    {
+      "name": "Image dialog opens and closes with focus restored; original anchor stays intact",
+      "status": "passed"
+    },
+    {
+      "name": "Search returns actual matching pages",
+      "status": "passed"
+    },
+    {
+      "name": "Search has a helpful empty state",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown URL sends HTTP 404 with a usable search form",
+      "status": "passed"
+    },
+    {
+      "name": "Password-protected content stays protected",
+      "status": "passed"
+    },
+    {
+      "name": "Gutenberg columns and native block content render",
+      "status": "passed"
+    },
+    {
+      "name": "Posts index uses native pagination",
+      "status": "passed"
+    },
+    {
+      "name": "Archive, single post and comments form render",
+      "status": "passed"
+    },
+    {
+      "name": "200% text zoom has no viewport overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced-motion disables smooth scrolling",
+      "status": "passed"
+    },
+    {
+      "name": "Navigation and content work without JavaScript",
+      "status": "passed"
+    },
+    {
+      "name": "Failed enhancement script recovers an expanded mobile navigation",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript runtime errors",
+      "status": "passed"
+    }
+  ]
+}

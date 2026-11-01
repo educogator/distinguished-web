@@ -20,10 +20,20 @@ $mckk_ads_style = mckk_ads_sanitize_hero_style( get_theme_mod( 'mckk_ads_hero_st
 		<p class="hero-description"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 		<?php endif; ?>
 		<div class="hero-actions">
-		<?php foreach ( array( 'learning', 'showcase', 'teaching' ) as $mckk_ads_path ) : ?>
-			<?php $mckk_ads_page = mckk_ads_public_content( $mckk_ads_path ); ?>
-			<?php if ( $mckk_ads_page ) : ?>
-			<a class="button<?php echo 'learning' === $mckk_ads_path ? '' : ' button--secondary'; ?>" href="<?php echo esc_url( get_permalink( $mckk_ads_page ) ); ?>"><?php echo esc_html( get_the_title( $mckk_ads_page ) ); ?><?php mckk_ads_arrow(); ?></a>
+		<?php foreach ( array( 'vision', 'teaching', 'learning', 'showcase' ) as $mckk_ads_path ) : ?>
+			<?php
+			$mckk_ads_page  = mckk_ads_public_content( $mckk_ads_path );
+			$mckk_ads_url   = $mckk_ads_page ? get_permalink( $mckk_ads_page ) : '';
+			$mckk_ads_label = $mckk_ads_page ? get_the_title( $mckk_ads_page ) : '';
+			if ( 'vision' === $mckk_ads_path ) {
+				$mckk_ads_label = __( 'Vision', 'mckk-ads-showcase' );
+				if ( ! $mckk_ads_url && 'page' === get_option( 'show_on_front' ) && get_queried_object_id() === (int) get_option( 'page_on_front' ) ) {
+					$mckk_ads_url = '#homepage-story-title';
+				}
+			}
+			?>
+			<?php if ( $mckk_ads_url ) : ?>
+			<a class="button<?php echo 'vision' === $mckk_ads_path ? '' : ' button--secondary'; ?>" href="<?php echo esc_url( $mckk_ads_url ); ?>"><?php echo esc_html( $mckk_ads_label ); ?><?php mckk_ads_arrow(); ?></a>
 			<?php endif; ?>
 		<?php endforeach; ?>
 		</div>
@@ -43,7 +53,7 @@ $mckk_ads_style = mckk_ads_sanitize_hero_style( get_theme_mod( 'mckk_ads_hero_st
 			);
 			?>
 		<?php endif; ?>
-		<div class="hero-concept-fallback" <?php echo $mckk_ads_size ? 'hidden' : ''; ?>><?php get_template_part( 'template-parts/media-concept' ); ?><p class="concept-caption"><?php esc_html_e( 'Concept illustration · Not student work', 'mckk-ads-showcase' ); ?></p></div>
+		<div class="hero-concept-fallback" <?php echo $mckk_ads_size ? 'hidden' : ''; ?>><?php get_template_part( 'template-parts/media-concept' ); ?><p class="concept-caption"><span class="screen-reader-text"><?php esc_html_e( 'Ideas in motion. Create with iPad.', 'mckk-ads-showcase' ); ?> </span><?php esc_html_e( 'Concept illustration · Not student work', 'mckk-ads-showcase' ); ?></p></div>
 		<?php if ( $mckk_ads_size && wp_get_attachment_caption( $mckk_ads_hero_id ) ) : ?>
 		<figcaption class="hero-original-caption"><?php echo esc_html( wp_get_attachment_caption( $mckk_ads_hero_id ) ); ?></figcaption>
 		<?php endif; ?>
