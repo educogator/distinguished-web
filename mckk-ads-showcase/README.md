@@ -1,13 +1,13 @@
 # MCKK ADS Showcase
 
-Version 1.1.4 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
+Version 1.1.5 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
 
 Independent hybrid classic theme. Requires WordPress 6.6+ and PHP 8.0+. No parent theme,
 mandatory plugin, Node.js, external font or build step is needed on the hosting account.
 
 ## Installation
 
-Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.4.zip` using Appearance >
+Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.5.zip` using Appearance >
 Themes > Add New > Upload Theme. Install and activate on staging. Keep the existing
 Reading/Permalink settings. Assign existing menus to Primary and optionally Footer.
 Choose the original, unmodified school logo in Appearance > Customize > Site Identity.
@@ -104,3 +104,8 @@ This replaces the four-button layout from 1.1.1; the Vision fallback is no longe
 Concept annotation: Ideas start here, in ink blue with locally bundled Caveat handwriting.
 Caveat is licensed under SIL OFL 1.1; see assets/fonts/Caveat-OFL.txt. No external font
 request is made by visitors. The main Create What Matters heading stays intact.
+
+## Changes in 1.1.5
+
+The annotation ellipse uses #FFDF00, sampled from the dominant yellow pixels in the
+current public MCKK logo. Handwritten annotation text remains ink blue.

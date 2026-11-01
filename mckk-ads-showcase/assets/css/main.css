@@ -1545,7 +1545,7 @@ td {
   place-items: center;
   width: 90%;
   height: 36%;
-  border: clamp(3px, 0.6cqw, 7px) solid #245b83;
+  border: clamp(3px, 0.6cqw, 7px) solid #ffdf00;
   border-radius: 58% 42% 60% 40%;
   transform: rotate(-15deg);
   margin: 12% 0;
