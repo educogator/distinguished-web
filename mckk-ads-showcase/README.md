@@ -1,13 +1,13 @@
 # MCKK ADS Showcase
 
-Version 1.1.1 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
+Version 1.1.2 · Text domain `mckk-ads-showcase` · GPL-2.0-or-later.
 
 Independent hybrid classic theme. Requires WordPress 6.6+ and PHP 8.0+. No parent theme,
 mandatory plugin, Node.js, external font or build step is needed on the hosting account.
 
 ## Installation
 
-Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.1.zip` using Appearance >
+Back up and test on staging first. Upload `mckk-ads-showcase-v1.1.2.zip` using Appearance >
 Themes > Add New > Upload Theme. Install and activate on staging. Keep the existing
 Reading/Permalink settings. Assign existing menus to Primary and optionally Footer.
 Choose the original, unmodified school logo in Appearance > Customize > Site Identity.
@@ -87,3 +87,8 @@ existing public page/post at that slug, otherwise links to the existing Our stor
 on a static homepage. No new page or URL is created. Home card images fill their frames
 with a centered CSS crop, including the large showcase card. The original concept
 ellipse now reads “Create with iPad”; its accessible equivalent appears in the hero caption.
+
+## Changes in 1.1.2
+
+The concept ellipse now reads “Create What Matters”, with matching screen-reader text
+and translation strings.

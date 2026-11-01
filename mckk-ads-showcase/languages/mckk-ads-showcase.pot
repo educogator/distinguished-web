@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MCKK ADS Showcase 1.1.1\n"
+"Project-Id-Version: MCKK ADS Showcase 1.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mckk-ads-showcase\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,7 +277,7 @@ msgid "Vision"
 msgstr ""
 
 #: template-parts/hero.php:56
-msgid "Ideas in motion. Create with iPad."
+msgid "Ideas in motion. Create What Matters."
 msgstr ""
 
 #: template-parts/hero.php:56
@@ -301,7 +301,7 @@ msgid "Ideas in motion"
 msgstr ""
 
 #: template-parts/media-concept.php:11
-msgid "Create with iPad"
+msgid "Create What Matters"
 msgstr ""
 
 #: template-parts/post-list.php:40
