@@ -1,0 +1,40 @@
+{
+  "environment": "Local public-content replay, Chromium; hero-scoped axe",
+  "results": [
+    {
+      "width": 360,
+      "heading": "passed",
+      "links": "passed",
+      "overflow": false,
+      "axeViolations": 0
+    },
+    {
+      "width": 390,
+      "heading": "passed",
+      "links": "passed",
+      "overflow": false,
+      "axeViolations": 0
+    },
+    {
+      "width": 768,
+      "heading": "passed",
+      "links": "passed",
+      "overflow": false,
+      "axeViolations": 0
+    },
+    {
+      "width": 1024,
+      "heading": "passed",
+      "links": "passed",
+      "overflow": false,
+      "axeViolations": 0
+    },
+    {
+      "width": 1440,
+      "heading": "passed",
+      "links": "passed",
+      "overflow": false,
+      "axeViolations": 0
+    }
+  ]
+}

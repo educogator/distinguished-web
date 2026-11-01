@@ -1,6 +1,6 @@
 {
   "name": "mckk-ads-showcase-dev",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "private": true,
   "description": "Development-only browser validation; no Node required on production",
   "scripts": {

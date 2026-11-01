@@ -1,13 +1,13 @@
-# MCKK ADS Showcase · 1.1.2
+# MCKK ADS Showcase · 1.1.3
 
 An independent hybrid classic WordPress theme for a digital learning showcase. Existing
 WordPress content stays in the database and remains editable. There is no content import,
 page recreation, React application, required paid plugin, external font, or production build.
 
-**Release:** `dist/mckk-ads-showcase-v1.1.2.zip` (checksum alongside it).
+**Release:** `dist/mckk-ads-showcase-v1.1.3.zip` (checksum alongside it).
 **Source:** `mckk-ads-showcase/`. **Minimum:** WordPress 6.6, PHP 8.0. Recommended: a
 currently supported WordPress/PHP release, verified with your plugins on staging first.
-Actual test versions and limits are recorded in [Kemas kini 1.1.2](docs/update-v1.1.2.md) dan [QA 1.1.1](docs/update-v1.1.1.md).
+Actual test versions and limits are recorded in [Kemas kini 1.1.3](docs/update-v1.1.3.md) dan [QA 1.1.1](docs/update-v1.1.1.md).
 
 ## Install and edit
 

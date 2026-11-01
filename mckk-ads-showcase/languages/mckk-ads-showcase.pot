@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MCKK ADS Showcase 1.1.2\n"
+"Project-Id-Version: MCKK ADS Showcase 1.1.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mckk-ads-showcase\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-01T06:03:17+00:00\n"
+"POT-Creation-Date: 2026-11-01T13:27:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mckk-ads-showcase\n"
@@ -260,40 +260,39 @@ msgstr ""
 msgid "Choose a related page below or search the site."
 msgstr ""
 
-#: template-parts/hero.php:18
-msgid "Inspire."
-msgstr ""
-
-#: template-parts/hero.php:18
-msgid "Imagine."
-msgstr ""
-
-#: template-parts/hero.php:18
-msgid "Impact."
-msgstr ""
-
-#: template-parts/hero.php:29
-msgid "Vision"
-msgstr ""
-
-#: template-parts/hero.php:56
-msgid "Ideas in motion. Create What Matters."
-msgstr ""
-
-#: template-parts/hero.php:56
-msgid "Concept illustration · Not student work"
-msgstr ""
-
-#: template-parts/hero.php:61
+#: template-parts/hero.php:15
+#: template-parts/hero.php:59
 msgid "Inspire"
 msgstr ""
 
-#: template-parts/hero.php:61
+#: template-parts/hero.php:16
+#: template-parts/hero.php:59
 msgid "Imagine"
 msgstr ""
 
-#: template-parts/hero.php:61
+#: template-parts/hero.php:17
+#: template-parts/hero.php:59
 msgid "Impact"
+msgstr ""
+
+#: template-parts/hero.php:23
+msgid "Create"
+msgstr ""
+
+#: template-parts/hero.php:23
+msgid "What"
+msgstr ""
+
+#: template-parts/hero.php:23
+msgid "Matters"
+msgstr ""
+
+#: template-parts/hero.php:54
+msgid "Ideas in motion. Create What Matters."
+msgstr ""
+
+#: template-parts/hero.php:54
+msgid "Concept illustration · Not student work"
 msgstr ""
 
 #: template-parts/media-concept.php:11

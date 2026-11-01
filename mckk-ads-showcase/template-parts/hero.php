@@ -11,29 +11,27 @@ if ( ! $mckk_ads_hero_id && 'page' === get_option( 'show_on_front' ) && ! post_p
 }
 $mckk_ads_size  = mckk_ads_web_image_size( $mckk_ads_hero_id );
 $mckk_ads_style = mckk_ads_sanitize_hero_style( get_theme_mod( 'mckk_ads_hero_style', 'editorial' ) );
+$mckk_ads_links = array(
+	'teaching' => __( 'Inspire', 'mckk-ads-showcase' ),
+	'learning' => __( 'Imagine', 'mckk-ads-showcase' ),
+	'showcase' => __( 'Impact', 'mckk-ads-showcase' ),
+);
 ?>
 <section class="hero wrap hero--<?php echo esc_attr( $mckk_ads_style ); ?><?php echo $mckk_ads_size ? ' hero--with-media' : ''; ?>" aria-labelledby="hero-title">
 	<div class="hero-copy">
 		<p class="eyebrow"><span class="status-mark" aria-hidden="true"></span><?php bloginfo( 'name' ); ?></p>
-		<h1 id="hero-title"><span class="hero-word"><?php esc_html_e( 'Inspire.', 'mckk-ads-showcase' ); ?></span> <span class="hero-word"><?php esc_html_e( 'Imagine.', 'mckk-ads-showcase' ); ?></span> <span class="hero-word hero-word--accent"><?php esc_html_e( 'Impact.', 'mckk-ads-showcase' ); ?></span></h1>
+		<h1 id="hero-title"><span class="hero-word"><?php esc_html_e( 'Create', 'mckk-ads-showcase' ); ?></span> <span class="hero-word"><?php esc_html_e( 'What', 'mckk-ads-showcase' ); ?></span> <span class="hero-word hero-word--accent"><?php esc_html_e( 'Matters', 'mckk-ads-showcase' ); ?></span></h1>
 		<?php if ( get_bloginfo( 'description' ) ) : ?>
 		<p class="hero-description"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 		<?php endif; ?>
 		<div class="hero-actions">
-		<?php foreach ( array( 'vision', 'teaching', 'learning', 'showcase' ) as $mckk_ads_path ) : ?>
+		<?php foreach ( $mckk_ads_links as $mckk_ads_path => $mckk_ads_label ) : ?>
 			<?php
-			$mckk_ads_page  = mckk_ads_public_content( $mckk_ads_path );
-			$mckk_ads_url   = $mckk_ads_page ? get_permalink( $mckk_ads_page ) : '';
-			$mckk_ads_label = $mckk_ads_page ? get_the_title( $mckk_ads_page ) : '';
-			if ( 'vision' === $mckk_ads_path ) {
-				$mckk_ads_label = __( 'Vision', 'mckk-ads-showcase' );
-				if ( ! $mckk_ads_url && 'page' === get_option( 'show_on_front' ) && get_queried_object_id() === (int) get_option( 'page_on_front' ) ) {
-					$mckk_ads_url = '#homepage-story-title';
-				}
-			}
+			$mckk_ads_page = mckk_ads_public_content( $mckk_ads_path );
+			$mckk_ads_url  = $mckk_ads_page ? get_permalink( $mckk_ads_page ) : '';
 			?>
 			<?php if ( $mckk_ads_url ) : ?>
-			<a class="button<?php echo 'vision' === $mckk_ads_path ? '' : ' button--secondary'; ?>" href="<?php echo esc_url( $mckk_ads_url ); ?>"><?php echo esc_html( $mckk_ads_label ); ?><?php mckk_ads_arrow(); ?></a>
+			<a class="button<?php echo 'teaching' === $mckk_ads_path ? '' : ' button--secondary'; ?>" href="<?php echo esc_url( $mckk_ads_url ); ?>"><?php echo esc_html( $mckk_ads_label ); ?><?php mckk_ads_arrow(); ?></a>
 			<?php endif; ?>
 		<?php endforeach; ?>
 		</div>
